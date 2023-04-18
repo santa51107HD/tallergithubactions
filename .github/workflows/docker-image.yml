@@ -37,3 +37,4 @@ jobs:
           context: .
           push: true
           tags: santa51107HD/node-app:latest
+
