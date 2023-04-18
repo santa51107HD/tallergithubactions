@@ -18,21 +18,18 @@ test('multiply two numbers', () => {
 });
 
 
-test("should respond an string", async (done) => {
+test("should respond an string", async () => {
   const response = await request(app).get("/suma").send()
   expect(response.text).toBe("la suma de 1 y 2 es de: 3");
-  done();
 });
 
 
-test("should respond an string", async (done) => {
+test("should respond an string", async () => {
   const response = await request(app).get("/resta").send()
   expect(response.text).toBe("la resta de 1 y 2 es de: -1");
-  done();
 });
 
-test("should respond an string", async (done) => {
+test("should respond an string", async () => {
   const response = await request(app).get("/multiplicacion").send()
   expect(response.text).toBe("la multiplicacion de 1 y 2 es de: 2");
-  done();
 });
