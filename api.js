@@ -1,6 +1,7 @@
 const express = require('express')
 const sum = require('./sum');
 const resta = require('./resta');
+const multiplicacion = require('./multiplicacion');
 const app = express()
 const port = 3000
 
@@ -17,6 +18,12 @@ app.get('/suma', (req, res) => {
 app.get('/resta', (req, res) => {
   valor= resta(1,2)
   string="la resta de 1 y 2 es de: " + valor
+  res.send(string)
+})
+
+app.get('/multiplicacion', (req, res) => {
+  valor= multiplicacion(1,2)
+  string="la multiplicacion de 1 y 2 es de: " + valor
   res.send(string)
 })
 
