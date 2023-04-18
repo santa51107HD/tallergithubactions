@@ -3,7 +3,7 @@ const sum = require('./sum');
 const resta = require('./resta');
 const multiplicacion = require('./multiplicacion');
 const app = express()
-const port = 3000
+const port = 4000
 
 app.get('/', (req, res) => {
   res.send('PRUEBA API')
