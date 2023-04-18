@@ -36,5 +36,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: santa51107HD/node-app:latest
+          tags: apenaranda/node-app:latest
 
